@@ -1,0 +1,40 @@
+@import url("../css/components/icon.css");
+@import url("../css/layout/header.css");
+@import url("../css/layout/container.css");
+@import url("../css/layout/navbar.css");
+
+
+@font-face {
+    font-family: MISA Fonts Bold;
+    src: url("../assets/fonts/notosans-bold.3ede5aff.woff2")
+}
+
+@font-face {
+    font-family: MISA Fonts Italic;
+    src: url("../assets/fonts/notosans-italic.1c1aaac9.woff2")
+}
+
+@font-face {
+    font-family: MISA Fonts;
+    src: url("../assets/fonts/notosans-regular.2cb88a13.woff2")
+}
+
+@font-face {
+    font-family: MISA Fonts SemiBold;
+    src: url("../assets/fonts/notosans-semibold.df3e6dc4.woff2")
+}
+
+@media  screen and (min-width: 1024px) {
+    
+}
+
+body {
+    font-family: MISA Fonts;
+    font-size: 13px;
+    margin: 0;
+    /* min-width: 1024px; */
+    box-sizing: border-box;
+    color: #111111;
+}
+
+

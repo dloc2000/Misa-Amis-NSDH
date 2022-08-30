@@ -1,0 +1,46 @@
+.m-icon {
+    background-repeat: no-repeat;
+}
+
+.m-icon-16 {
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.m-icon-14 {
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+}
+.m-icon-24 {
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.m-icon-32 {
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.icon__dashboard {
+    background-image: url(../../assets/icon/dashboard.png);
+}
+
+.icon__employee {
+    background-image: url(../../assets/icon/dic-employee.png);
+}
+
+.icon__report {
+    background-image: url(../../assets/icon/report.png);
+}
+
+.icon--save {
+    background-image: url(../../assets/icon/save.svg);
+}
