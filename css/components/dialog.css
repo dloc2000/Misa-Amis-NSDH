@@ -18,7 +18,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
-    background-color: #fff;
+    background-color: red;
     box-sizing: border-box;
     min-width: 300px;
 }

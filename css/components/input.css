@@ -49,3 +49,8 @@ select:focus {
 .input--error {
     border: 1px solid red !important;
 }
+
+.input-checkbox {
+    width: 16px;
+    height: 18px;
+}
