@@ -1,12 +1,12 @@
 .container {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .main {
     display: flex;
     flex-direction: row;
-    height: calc(100vh - 48px);
     width: 100%;
-    background-color: green;
+    height: calc(100vh - 48px);
 }

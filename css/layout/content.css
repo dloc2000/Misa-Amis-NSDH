@@ -1,0 +1,76 @@
+.content {
+    width: calc(100% - 173px);
+    height: 100%;
+    background-color: #eceef1;
+    flex-shrink: 0;
+    overflow-y: scroll;
+}
+/* page-header */
+.main__page {
+    padding-left: 20px;
+    padding-right: 30px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: scroll;
+}
+.page__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+.page__header-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.page__header--button {
+
+}
+
+/* page table + toolbar */
+.page__group {
+    background-color: #ffffff;
+    height: inherit;
+}
+
+.page__toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin : 20px 0 0;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.page__toolbar--input{
+    margin-right: 16px;
+}
+
+.page__toolbar--reload {
+    background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
+    background-position: -1097px -88px;
+    background-color:unset;
+    width: 36px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.page__footer {
+    position: sticky;
+    bottom: 0;
+    width: 100% - 30px;
+    height: 56px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    box-sizing: border-box ;
+}
