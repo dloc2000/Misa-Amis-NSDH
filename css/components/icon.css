@@ -44,3 +44,11 @@
 .icon--save {
     background-image: url(../../assets/icon/save.svg);
 }
+
+.m-arrow-dropdown {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+    background-position: -371px -364px;
+    width: 10px;
+	height: 8px;
+}

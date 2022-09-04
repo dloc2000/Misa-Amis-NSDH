@@ -13,7 +13,8 @@
     height: 100%;
     box-sizing: border-box;
     position: relative;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .page__header {
     display: flex;
@@ -52,19 +53,25 @@
 }
 
 .page__toolbar--reload {
-    background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
-    background-position: -1097px -88px;
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -1098px -90px;
     background-color:unset;
     width: 36px;
     height: 24px;
     border: none;
     cursor: pointer;
 }
+    /* page table */
+.page__table {
+    padding: 0px 20px;
+    padding-top: 20px;
+    height: 100%;
+}
 
 /* Footer */
 .page__footer {
     position: sticky;
-    bottom: 0;
+    bottom: 10px;
     width: 100% - 30px;
     height: 56px;
     background-color: green;
@@ -73,4 +80,17 @@
     justify-content: space-between;
     padding: 12px;
     box-sizing: border-box ;
+}
+
+.page__footer .page__pagingation {
+    display: flex;
+    align-items: center;
+}
+
+.page__pagingation .paging__group-button {
+    display: flex;
+}
+
+.paging__group-button .button__number-group {
+    display: flex;
 }

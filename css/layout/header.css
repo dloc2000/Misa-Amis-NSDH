@@ -20,8 +20,8 @@
     height: 100%;
 }
 .header__right-icon {
-    background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
-    background-position: -843px -30px;
+    background-image: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -840px -30px;
     cursor: pointer;
     margin: 0 10px;
 }   
@@ -35,10 +35,9 @@
 }
 
 .header__right-select .link-branch {
-    background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
-    background-position: -80px -360px;
+    background-image: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -1129px -358px;
     margin: 0 10px;
-    transform: rotate(90deg);
     cursor: pointer;
 }
 .header__right-user {
@@ -48,8 +47,8 @@
 }
 
 .user__bell-icon {
-    background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
-    background-position: -256px -88px;
+    background-image: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -788px -30px;
     background-color: orange;
     box-sizing: border-box;
     flex-shrink: 0;
@@ -76,8 +75,8 @@
     cursor: pointer;
 }
 .user__dropdown .link-branch {
-    background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
-    background-position: -1076px -32px;
+    background-image: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -1800px -474px;
     margin-left: 6px;
     cursor: pointer;
 
@@ -97,8 +96,8 @@
 
 
 .header__sidebar {
-    background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
-    background-position: -424px -86px;
+    background-image: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -1157px -27px;
     margin-right: 10px;
     cursor: pointer;
 }

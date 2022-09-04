@@ -82,19 +82,71 @@
                 <div class="main__page">
                     <div class="page__header">
                         <div class="page__header-title">Nhân viên</div>
-                        <button class="page__header--button button">Thêm mới nhân viên</button>
+                        <button class="page__header--button button1">Thêm mới nhân viên</button>
                     </div>
                     <div class="page__group">
                         <div class="page__toolbar">
                             <input type="text" class="page__toolbar--input input input__icon">
                             <button class="page__toolbar--reload"></button>
                         </div>
-                        <div class="page__table">table</div>
+                        <div class="page__table">
+                            <div class="table__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text__align--left" style="min-width: 40px;">
+                                                <input type="checkbox">
+                                            </th>
+                                            <th class="text__align--left" style="min-width: 150px;">Mã nhân viên</th>
+                                            <th class="text__align--left" style="min-width: 250px;">Tên nhân viên</th>
+                                            <th class="text__align--left" style="min-width: 120px;">Giới tính</th>
+                                            <th class="text__align--center" style="min-width: 120px;">Ngày sinh</th>
+                                            <th class="text__align--left" style="min-width: 200px;">Số CMND</th>
+                                            <th class="text__align--left" style="min-width: 250px;">Chức danh</th>
+                                            <th class="text__align--left" style="min-width: 250px;">Tên đơn vị</th>
+                                            <th class="text__align--left" style="min-width: 150px;">Số tài khoản</th>
+                                            <th class="text__align--left" style="min-width: 250px;">Tên ngân hàng</th>
+                                            <th class="text__align--left" style="min-width: 250px;">Chi nhánh TK ngân hàng</th>
+                                            <th class="text__align--center" style="min-width: 120px;">Chức năng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text__align--left" style="min-width: 40px;">
+                                                <input type="checkbox">
+                                            </td>
+                                            <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                            <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                            <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                            <td class="text__align--center" style="min-width: 120px;">01/01/1990</td>
+                                            <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                            <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                            <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                            <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                            <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                            <td class="text__align--left" style="min-width: 250px;">Chi nhánh TK ngân hàng</td>
+                                            <td class="text__align--center" style="min-width: 120px;">Chức năng</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                     <div class="page__footer">
-                        <div class="page__total-record">Tổng số:<b>94</b> bản ghi</div>
+                        <div class="page__total-record">Tổng số:<b> 94</b> bản ghi</div>
                         <div class="page__pagingation">
-                            <div class="combox_paging"></div>
+                            <div class="combobox_paging combobox">
+                                    <input type="text" class="input">
+                                    <button>
+                                        <div class="m-arrow-dropdown"></div>
+                                    </button>
+                                    <div class="combobox__data" hidden>
+                                        <div class="combobox__item"  value="0">5 bản ghi trên 1 trang</div>
+                                        <div class="combobox__item"  value="1">10 bản ghi trên 1 trang</div>
+                                        <div class="combobox__item"  value="2">15 bản ghi trên 1 trang</div>
+                                        <div class="combobox__item"  value="3">20 bản ghi trên 1 trang</div>
+                                    </div>
+                            </div>
                             <div class="paging__group-button">
                                 <button class="paging__button-first">Trước</button>
                                 <div class="button__number-group">
@@ -105,7 +157,6 @@
                                     <button class="paging__number">5</button>
                                 </div>
                                 <button class="paging__button-first">Sau</button>
-
                             </div>
                         </div>
                     </div>
@@ -113,5 +164,11 @@
             </div>
         </div>
     </div>
+    <!-- Thư viện js -->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../lib/combobox/js/combobox.js"></script>
+    <!-- js dùng chung -->
+
+    <!-- js dùng riêng -->
 </body>
 </html>

@@ -2,6 +2,8 @@
 @import url("../css/components/button.css");
 @import url("../css/components/input.css");
 @import url("../css/components/dialog.css");
+@import url("../css/components/combobox.css");
+@import url("../css/components/table.css");
 @import url("../css/components/grid.css");
 @import url("../css/layout/header.css");
 @import url("../css/layout/container.css");
@@ -37,9 +39,20 @@ body {
     font-family: MISA Fonts;
     font-size: 13px;
     margin: 0;
-    /* min-width: 1024px; */
+    min-width: 1024px;
     box-sizing: border-box;
     color: #111111;
+    overflow: hidden;
+}
+
+.text__align--left {
+    text-align: left;
+}
+.text__align--center {
+    text-align: center;
+}
+.text__align--right {
+    text-align: right;
 }
 
 

@@ -3,14 +3,20 @@
     border-spacing: 0;
 }
 
-table tr {
-    height: 48px;
+table thead tr {
+    height: 34px;
+    background-color: #e5e8ec;
+    font-size: 12px;
 }
 
 table tr td,
 th {
-    border-bottom: 1px solid #ccc;
     padding: 0 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+    position: sticky;
+    z-index: 2;
 }
 
 table tbody tr:last-child {
@@ -29,19 +35,39 @@ table tr.row--selected {
 
 table tr td:first-child,
 table tr td:last-child {
-    padding-left: 16px;
+    position: sticky;
 }
 
+.page__table tr th input {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.page__table tr td input {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+table tbody tr td {
+    height: 44px;
+}
 .table__content {
-    /* background-color: blueviolet; */
     overflow-y: auto;
-    /* height: 200px; */
     max-width: 100%;
     flex: 1;
     flex-basis: 100px;
+    height: calc(100%-56px);
 }
 
-.table__paging {
+/* .table__paging {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,28 +99,6 @@ table tr td:last-child {
     opacity: 1;
 }
 
-.paging__button--first {
-    background-image: url(../../assets/icon/btn-firstpage.svg);
-}
-
-.paging__button--prev {
-    background-image: url(../../assets/icon/btn-prev-page.svg);
-}
-
-.paging__button--next {
-    background-image: url(../../assets/icon/btn-next-page.svg);
-}
-
-.paging__button--last {
-    background-image: url(../../assets/icon/btn-lastpage.svg);
-}
-
-.paging__button--group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .paging__number {
     width: 40px;
     height: 40px;
@@ -111,9 +115,4 @@ table tr td:last-child {
 
 .paging__number:hover {
     background-color: #dedede;
-}
-
-.paging__number--selected {
-    background-color: #019160;
-    color: #fff;
-}
+} */
