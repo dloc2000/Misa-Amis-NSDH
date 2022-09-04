@@ -56,9 +56,59 @@
     cursor: pointer;
 }
 
+/* form-body */
 
+.container__form-body {
+    display: grid;
+    grid-row-gap: 16px;
+    height: 390px;
+    width: 100%;
+    background-color: rgb(177, 173, 173);
+    padding : 0 32px;
+    box-sizing: border-box;
+}
+    /* grid-up left*/
+.form__grid-up {
+    margin-bottom: 12px;
+}
+.grid__up-left{
+    padding-right: 26px;
+}
+.grid__up-left .left-1{
+    display: flex;
+    
+}
 
+.grid__up-left .left-1 .group__input--title:nth-child(1) {
+    padding-right: 6px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
 
+.grid__up-left .left-1 .group__input--title:nth-child(2) {
+    width: 235px;
+    display: flex;
+    flex-direction: column;
+}
+    /* grid-up right*/
+
+.grid__up-right .right-1 {
+     display: flex;
+}
+.grid__up-right .right-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+    /* grid-down */
+.grid__down-2 {
+    display: flex;
+}
+
+.container__form-body .group__input--title {
+    padding-right: 6px;
+}
 
 
 
