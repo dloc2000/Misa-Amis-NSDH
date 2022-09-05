@@ -1,7 +1,7 @@
 .container__form {
     width: 900px;
     height: 610px;
-    background-color: #10a4ae94;
+    background-color: #fff;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -11,7 +11,6 @@
 /* form-header left */ 
 .container__form-header{
     display: flex;
-    background-color: cadetblue;
     height: 73px;
     justify-content:space-between ;
     align-items: center;
@@ -30,6 +29,9 @@
 
 .form__popup-title .checkbox__component label {
     margin-left: 10px;
+}
+.form__popup-title .checkbox__component .input-checkbox:checked {
+    background-color: #019160;
 }
 .title-popup {
     font-weight: 700;
@@ -56,6 +58,8 @@
     cursor: pointer;
 }
 
+
+
 /* form-body */
 
 .container__form-body {
@@ -63,7 +67,6 @@
     grid-row-gap: 16px;
     height: 390px;
     width: 100%;
-    background-color: rgb(177, 173, 173);
     padding : 0 32px;
     box-sizing: border-box;
 }

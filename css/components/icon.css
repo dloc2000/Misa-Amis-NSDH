@@ -29,21 +29,62 @@
     height: 32px;
 }
 
-.icon__dashboard {
-    background-image: url(../../assets/icon/dashboard.png);
+.m__icon-dashboard {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -33px -1630px;
 }
 
-.icon__employee {
-    background-image: url(../../assets/icon/dic-employee.png);
+.m__icon-cash {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -78px -1630px;
 }
 
-.icon__report {
-    background-image: url(../../assets/icon/report.png);
+.m__icon-deposit {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -427px -1630px;
 }
 
-.icon--save {
-    background-image: url(../../assets/icon/save.svg);
+.m__icon-buy {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -165px -1630px;
 }
+
+.m__icon-sell {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -206px -1630px;
+}
+
+.m__icon-bill {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -254px -1630px;
+}
+
+.m__icon-warehouse {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -121px -1630px;
+}
+
+.m__icon-tool {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -339px -1630px;
+}
+
+.m__icon-defaultassets {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -382px -1630px;
+}
+
+.m__icon-salary {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -471px -1630px;
+}
+
+.m__icon-tax {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -427px -1630px;
+}
+
+
 
 .m-arrow-dropdown {
     background-image: url(../../assets/img/Sprites.64af8f61.svg);
@@ -51,4 +92,12 @@
     background-position: -371px -364px;
     width: 10px;
 	height: 8px;
+}
+
+.m-arrow-dropdown-blue {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+    background-position: -900px -365px;
+    width: 8px;
+	height: 6px;
 }

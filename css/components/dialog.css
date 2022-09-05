@@ -7,6 +7,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.24);
+    z-index: 3;
 }
 
 .dialog__content {
@@ -18,9 +19,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
-    background-color: red;
     box-sizing: border-box;
-    min-width: 300px;
+    background-color: #fff;
+    /* min-width: 300px; */
 }
 
 .dialog__header {

@@ -49,7 +49,16 @@
                             <div class="input__title">Đơn vị
                                 <b style="color: red">*</b>
                             </div>
-                            <input type="text" class="input input-full-width">
+                            <div class="combobox">
+                                <input type="text" class="input">
+                                <button>
+                                    <div class="m-arrow-dropdown"></div>
+                                </button>
+                                <div class="combobox__data" hidden>
+                                    <div class="combobox__item"  value="0">Ban giám đốc</div>
+                                    <div class="combobox__item"  value="1">Ban nhân sự</div>
+                                </div>          
+                            </div>
                         </div>
                     </div>
                     <div class="left-3">
@@ -153,5 +162,7 @@
         </div>
         <input type="text" class="input">
     </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="lib/combobox/js/combobox.js"></script>
 </body>
 </html>

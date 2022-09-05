@@ -11,7 +11,7 @@ table thead tr {
 
 table tr td,
 th {
-    padding: 0 10px;
+    padding-left: 12px;
     text-transform: uppercase;
     border-bottom: 1px solid #c7c7c7;
     border-right: 1px solid #c7c7c7;
@@ -22,7 +22,27 @@ th {
 table tbody tr:last-child {
     border-bottom: unset;
 }
+table tbody .title {
+    color: #0075c0;
+    font-weight: 600;
+    padding-right: 16px;
+}
 
+table tbody button {
+    background-color: unset;
+    height: 26px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+table tbody button:focus {
+    width: 26px;
+    height: 16px;
+    line-height: 13px;
+    border-radius: 2px;
+    border: 1px solid #0075c0;
+
+}
 table thead {
     position: sticky;
     top: 0;
@@ -38,29 +58,46 @@ table tr td:last-child {
     position: sticky;
 }
 
-.page__table tr th input {
-    width: 18px;
-    height: 16px;
+table tr td:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.page__table tr th input {
+    width: 18px;
+    height: 16px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     border-radius: 2px;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .page__table tr td input {
     width: 18px;
     height: 16px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     border-radius: 2px;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 table tbody tr td {
     height: 44px;
 }
-.table__content {
+
+.page__table {
+    overflow-x: auto;
     overflow-y: auto;
+}
+.table__content {
+    /* overflow-y: auto; */
     max-width: 100%;
     flex: 1;
     flex-basis: 100px;

@@ -24,7 +24,7 @@
 }
 
 .navbar__item:hover {
-    background-color: #b8bcc3;
+    background-color: #d4d7dc;
 }
 
 .item-active {
@@ -39,8 +39,8 @@
     border-left: 6px solid #2c9f1c;
 }
 .navbar__icon {
-    background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
-    background-position: -73px -1585px;
+    /* background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
+    background-position: -73px -1585px; */
     cursor: pointer;
 }
 
