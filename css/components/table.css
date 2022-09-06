@@ -88,6 +88,9 @@ table tr td:last-child {
     padding: 0;
 }
 
+table tbody tr:hover {
+    background-color: #E5F3FF;
+}
 table tbody tr td {
     height: 44px;
 }

@@ -44,17 +44,15 @@
     position: absolute;
     right: 8px;
     top: 8px;
+    align-items: center;
+    padding: 6px;
 }
 .form__popup-close .btn-help {
-    background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
-    background-position: -89px -144px;
     cursor: pointer;
-    margin-right: 6px;
+    margin-right: 8px;
 }
 
 .form__popup-close .btn-close {
-    background-image: url("https://actappg2.misacdn.net/img/Sprites.6bf3e5c7.svg");
-    background-position: -144px -144px;
     cursor: pointer;
 }
 

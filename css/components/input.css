@@ -4,8 +4,8 @@
     outline: none;
     box-sizing: border-box;
     border: 1px solid #bbbbbb;
-    padding-left: 10px;
-    padding-right: 12px;
+    padding-left: 12px;
+    padding-right: 40px;
     min-width: 100px;
     font-family: MISA Fonts;
 }
@@ -14,16 +14,17 @@
     width: 100%;
 }
 
+.input-placehoder__italic::placeholder {
+    font-style: italic;
+    font-size: 12px;
+    opacity: 0.8;
+}
 .input__title {
     font-size: 12px;
     font-weight: 700;
     color: #111111;
     padding: 0 0 4px;
 }
-
-
-
-
 
 textarea {
     border-radius: 4px;
@@ -41,16 +42,19 @@ select:focus {
 }
 
 .input__icon {
-    background-size: 16px 16px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 16px;
-    padding-left: 40px;
-    padding-right: 16px;
+    background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat -956px -31px;
+	width: 22px;
+	height: 22px;
 }
 
-.input__icon--search {
-    background-image: url(../../assets/icon/search.png);
+.input__icon-right {
+    background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat -33px -1664px;
+	width: 16px;
+	height: 16px;
+    position: absolute;
+    right: 9% ;
+    top:12% ;
+    cursor: pointer;
 }
 
 .input--required {

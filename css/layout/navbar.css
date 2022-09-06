@@ -21,14 +21,15 @@
     color: #ffffff;
     box-sizing: border-box;
     position: relative;
+    cursor: pointer;
 }
 
 .navbar__item:hover {
-    background-color: #d4d7dc;
+    background-color: #58595d;
 }
 
 .item-active {
-    background-color: #b8bcc3;
+    background-color: #58595d;
 }
 .item-pesudo:before {
     content: "";
@@ -44,7 +45,11 @@
     cursor: pointer;
 }
 
+.m__icon-cash:hover::before {
+    background-color: #fff;
+  }
+  
 .navbar__text {
     font-weight: 700;
     margin-left: 8px;
-    }
+}

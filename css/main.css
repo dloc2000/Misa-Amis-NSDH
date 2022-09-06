@@ -55,5 +55,7 @@ body {
 .text__align--right {
     text-align: right;
 }
-
+.no_padding{
+    padding: 0;
+}
 

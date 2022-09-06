@@ -87,33 +87,36 @@
                     <div class="page__content">
                         <div class="page__group">
                             <div class="page__toolbar">
-                                <input type="text" class="page__toolbar--input input input__icon">
+                                <input type="text" class="page__toolbar--input input input-placehoder__italic" placeholder="Tìm theo mã, tên nhân viên">
                                 <button class="page__toolbar--reload"></button>
+                                <div>
+                                    <div class="input__icon-right"></div>
+                                </div>
                             </div>
                             <div class="page__table">
                                 <div class="table__content">
-                                    <table class="table">
+                                    <table id="tbEmployeeList" class="table">
                                         <thead>
                                             <tr>
-                                                <th class="text__align--center" style="min-width: 40px;">
+                                                <th class="text__align--center no_padding" prop-name="checkbox"style="min-width: 40px;">
                                                     <input type="checkbox">
                                                 </th>
-                                                <th class="text__align--left" style="min-width: 150px;">Mã nhân viên</th>
-                                                <th class="text__align--left" style="min-width: 250px;">Tên nhân viên</th>
-                                                <th class="text__align--left" style="min-width: 120px;">Giới tính</th>
-                                                <th class="text__align--center" style="min-width: 120px;">Ngày sinh</th>
-                                                <th class="text__align--left" style="min-width: 200px;">Số CMND</th>
-                                                <th class="text__align--left" style="min-width: 250px;">Chức danh</th>
-                                                <th class="text__align--left" style="min-width: 250px;">Tên đơn vị</th>
-                                                <th class="text__align--left" style="min-width: 150px;">Số tài khoản</th>
-                                                <th class="text__align--left" style="min-width: 250px;">Tên ngân hàng</th>
-                                                <th class="text__align--left" style="min-width: 250px;">Chi nhánh TK ngân hàng</th>
-                                                <th class="text__align--center" style="min-width: 120px;">Chức năng</th>
+                                                <th class="text__align--left" prop-name="EmployeeCode" style="min-width: 150px;">Mã nhân viên</th>
+                                                <th class="text__align--left" prop-name="FullName" style="min-width: 250px;">Tên nhân viên</th>
+                                                <th class="text__align--left" prop-name="Gender" style="min-width: 120px;">Giới tính</th>
+                                                <th class="text__align--center" prop-name="DateOfBirth" format-date style="min-width: 120px;">Ngày sinh</th>
+                                                <th class="text__align--left" prop-name="IdentityNumber" style="min-width: 200px;">Số CMND</th>
+                                                <th class="text__align--left" prop-name="PositionName" style="min-width: 250px;">Chức danh</th>
+                                                <th class="text__align--left" prop-name="DepartmentName" style="min-width: 250px;">Tên đơn vị</th>
+                                                <th class="text__align--left" prop-name="GenderName" style="min-width: 150px;">Số tài khoản</th>
+                                                <th class="text__align--left" prop-name="GenderName" style="min-width: 250px;">Tên ngân hàng</th>
+                                                <th class="text__align--left" prop-name="GenderName" style="min-width: 250px;">Chi nhánh TK ngân hàng</th>
+                                                <th class="text__align--center" prop-name="fix" style="min-width: 120px;">Chức năng</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="text__align--center" style="min-width: 40px;">
+                                                <td class="text__align--center no_padding" style="min-width: 40px;">
                                                     <input type="checkbox">
                                                 </td>
                                                 <td class="text__align--left" style="min-width: 150px;">001200</td>
@@ -128,7 +131,15 @@
                                                 <td class="text__align--left" style="min-width: 250px;">Chi nhánh TK ngân hàng</td>
                                                 <td class="text__align--center" style="min-width: 120px;">
                                                     <div class="title">Sửa</div>
-                                                    <button class="m-icon"><div class="m-arrow-dropdown-blue"></div></button>
+                                                    <div class="combobox">
+                                                        <button class="m-icon"><div class="m-arrow-dropdown-blue"></div></button>
+                                                        <div class="combobox__data-under" hidden>
+                                                            <div class="combobox__item" value="0">Nhân bản</div>
+                                                            <div class="combobox__item" value="1">Xóa</div>
+                                                            <div class="combobox__item"  value="2">Ngưng sử dụng</div>
+                                                        </div>
+                                                    </div>
+                                                    
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -144,17 +155,17 @@
                                         <button>
                                             <div class="m-arrow-dropdown"></div>
                                         </button>
-                                        <div class="combobox__data" hidden>
-                                            <div class="combobox__item"  value="0">5 bản ghi trên 1 trang</div>
-                                            <div class="combobox__item"  value="1">10 bản ghi trên 1 trang</div>
-                                            <div class="combobox__item"  value="2">15 bản ghi trên 1 trang</div>
-                                            <div class="combobox__item"  value="3">20 bản ghi trên 1 trang</div>
+                                        <div class="combobox__data-above" hidden>
+                                            <div class="combobox__item item-left"  value="0">5 bản ghi trên 1 trang</div>
+                                            <div class="combobox__item item-left combobox__item-selected" value="1">10 bản ghi trên 1 trang</div>
+                                            <div class="combobox__item item-left"  value="2">15 bản ghi trên 1 trang</div>
+                                            <div class="combobox__item item-left"  value="3">20 bản ghi trên 1 trang</div>
                                         </div>
                                 </div>
                                 <div class="paging__group-button">
                                     <button class="paging__button button-first" disabled>Trước</button>
                                     <div class="button__number-group">
-                                        <button class="paging__number">1</button>
+                                        <button class="paging__number button__number-selected">1</button>
                                         <button class="paging__number">2</button>
                                         <button class="paging__number">...</button>
                                         <button class="paging__number">4</button>
@@ -187,11 +198,11 @@
                         </div>
                     </div>
                     <div class="form__popup-close">
-                        <div class="btn-help m-icon-24"></div>
-                        <div class="btn-close m-icon-24"></div>
+                        <div class="btn-help m__icon-help"></div>
+                        <div class="btn-close m__icon-close"></div>
                     </div>
                 </div>
-                <div class="container__form-body row-2">
+                <div id="formBody"class="container__form-body row-2">
                     <div class="form__grid-up col-2">
                         <div class="grid__up-left row-3">
                             <div class="left-1">
@@ -199,13 +210,13 @@
                                     <div class="input__title">Mã
                                         <b style="color: red">*</b>
                                     </div>
-                                    <input id="txtEmployeeCode" type="text" class="input">
+                                    <input id="txtEmployeeCode" type="text" class="input" prop-name="EmployeeCode" empty-value >
                                 </div>
                                 <div class="group__input--title">
                                     <div class="input__title">Tên
                                         <b style="color: red">*</b>
                                     </div>
-                                    <input type="text" class="input">
+                                    <input type="text" class="input" id="txtFullName" prop-name="FullName" empty-value >
                                 </div>
                             </div>
                             <div class="left-2">
@@ -214,7 +225,7 @@
                                         <b style="color: red">*</b>
                                     </div>
                                     <div class="combobox">
-                                        <input type="text" class="input">
+                                        <input type="text" class="input" empty-value>
                                         <button>
                                             <div class="m-arrow-dropdown"></div>
                                         </button>
@@ -227,10 +238,8 @@
                             </div>
                             <div class="left-3">
                                 <div class="group__input--title">
-                                    <div class="input__title">Chức danh
-                                        <b style="color: red">*</b>
-                                    </div>
-                                    <input type="text" class="input input-full-width">
+                                    <div class="input__title">Chức danh</div>
+                                    <input type="text" class="input input-full-width" id="txtPosition" prop-name="PositionName">
                                 </div>
                             </div>
                         </div>
@@ -238,7 +247,7 @@
                             <div class="right-1">
                                 <div class="group__input--title">
                                     <div class="input__title">Ngày sinh</div>
-                                    <input type="date" class="input input-full-width">
+                                    <input type="date" class="input input-full-width" id="txtBirthday" prop-name="DateOfBirth"s>
                                 </div>
                                 <div class="group__input--title">
                                     <div class="input__title">Giới tính</div>
@@ -328,6 +337,31 @@
         </div>
         <input type="text" class="input">
     </div>
+
+    <!-- form-dialog -->
+    <div id="dlgDialog1" class="dialog dialog--warning" hidden>
+        <div class="dialog__content">
+            <div id="btnClose1" class="dialog__button--close"></div>
+            <div class="dialog__header title">Thông báo</div>
+            <div class="dialog__body">
+                <div class="dialog__msg-item">
+                    Thông tin này không được phép để trống
+                </div>
+                <div class="dialog__msg-item">
+                    Thông tin này không được phép để trống
+                </div>
+                <div class="dialog__msg-item">
+                    Thông tin này không được phép để trống
+                </div>
+            </div>
+            <div class="dialog__footer">
+                <button id="btnOk" class="button1">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- Thư viện js -->
     <script src="../js/jquery-3.6.1.min.js"></script>

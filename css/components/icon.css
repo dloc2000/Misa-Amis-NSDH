@@ -84,14 +84,26 @@
     background-position: -427px -1630px;
 }
 
+.m__icon-close {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -147px -147px;
+    width: 18px;
+    height: 18px;
+}
 
 
+.m__icon-help {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position: -89px -145px;
+    width: 22px;
+    height: 22px;
+}
 .m-arrow-dropdown {
     background-image: url(../../assets/img/Sprites.64af8f61.svg);
     background-repeat: no-repeat;
-    background-position: -371px -364px;
-    width: 10px;
-	height: 8px;
+    background-position: -564px -365px;
+    width: 8px;
+	height: 5px;
 }
 
 .m-arrow-dropdown-blue {

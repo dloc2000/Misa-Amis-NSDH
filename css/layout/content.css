@@ -58,6 +58,7 @@
 }
 
 .page__toolbar--input{
+    position: relative;
     margin-right: 16px;
 }
 
@@ -75,6 +76,7 @@
     padding: 0px 20px;
     padding-top: 20px;
     height: calc(100% - 17px);
+    overflow-y: auto;
 }
 
 /* Footer */
@@ -89,6 +91,8 @@
     justify-content: space-between;
     padding: 12px;
     box-sizing: border-box ;
+    background-color: #fff;
+    z-index: 2;
 }
 
 .page__footer .page__pagingation {
@@ -121,9 +125,20 @@
     width: 20px;
     margin: 0 4px;
     padding: 0;
-    border: 1px solid #c7c7c7;
     outline: none;
+    border:none;
     cursor: pointer;
     background-color: unset;
     border-radius: 2px;
+}
+
+/* .paging__number:focus {
+    border: 1px solid #c7c7c7;
+    font-weight: 700;
+    color: #000;
+} */
+.button__number-selected {
+    border: 1px solid #c7c7c7 !important;
+    font-weight: 700;
+    color: #000;
 }
