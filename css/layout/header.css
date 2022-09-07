@@ -102,10 +102,10 @@
 }
 
 .header__logo {
-    height: 24px;
-    width: 50px;
-    background-image: url("../../assets/favicon.ico");
+    height: 32px;
+    width: 90px;
+    background-image: url("../../assets/img/logo_event_trungthu.090d014b.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     cursor: pointer;
 }

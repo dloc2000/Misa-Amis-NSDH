@@ -5,8 +5,9 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.24);
-    z-index: 3;
+    z-index: 10000;
 }
+
 
 .dialog__content {
     display: flex;
@@ -60,35 +61,37 @@
     margin-right: 8px;
 }
 
-.dialog__footer .button--cancel {
-    background-color: unset;
-    color: #000;
-}
 
-.dialog__footer .button--cancel:hover,
-.button--cancel:focus {
-    background-color: #ccc;
-}
+/* dialog ban co muon xoa hay khong */
 
-.dialog__button--close {
+.dialog__msg-box {
+    display: flex;
     position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 444px;
+    min-width: 400px;
+    height: 182px;
+    padding : 32px;
+}
+
+.dialog__msg-box .msg-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 0 4px 0 4px;
-    width: 40px;
-    height: 40px;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    background-image: url(../../assets/icon/x.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: invert(20%) sepia(100%) saturate(3000%)
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
-.dialog__button--close:hover {
-    background-color: #dedede;
-    filter: unset
-    /* filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); */
+.dialog__msg-box .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+

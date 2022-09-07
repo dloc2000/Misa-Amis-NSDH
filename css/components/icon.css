@@ -98,6 +98,22 @@
     width: 22px;
     height: 22px;
 }
+
+.m__icon-warning {
+    background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat -598px -463px;
+	width: 36px;
+	height: 37px;
+}
+
+
+
+
+
+
+
+
+
+
 .m-arrow-dropdown {
     background-image: url(../../assets/img/Sprites.64af8f61.svg);
     background-repeat: no-repeat;

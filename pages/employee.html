@@ -39,7 +39,7 @@
                     <div class="navbar__text">Tổng quan</div>
                 </div>
                 <div class="navbar__item item-pesudo item-active">
-                    <div class="navbar__icon m-icon-24 m__icon-cash"></div>
+                    <div class="navbar__icon m-icon-24 m__icon-cash item-selected"></div>
                     <div class="navbar__text">Tiền mặt</div>
                 </div>
                 <div class="navbar__item">
@@ -88,7 +88,7 @@
                         <div class="page__group">
                             <div class="page__toolbar">
                                 <input type="text" class="page__toolbar--input input input-placehoder__italic" placeholder="Tìm theo mã, tên nhân viên">
-                                <button class="page__toolbar--reload"></button>
+                                <button id="btnReload" class="page__toolbar--reload"></button>
                                 <div>
                                     <div class="input__icon-right"></div>
                                 </div>
@@ -130,16 +130,17 @@
                                                 <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
                                                 <td class="text__align--left" style="min-width: 250px;">Chi nhánh TK ngân hàng</td>
                                                 <td class="text__align--center" style="min-width: 120px;">
-                                                    <div class="title">Sửa</div>
-                                                    <div class="combobox">
-                                                        <button class="m-icon"><div class="m-arrow-dropdown-blue"></div></button>
-                                                        <div class="combobox__data-under" hidden>
-                                                            <div class="combobox__item" value="0">Nhân bản</div>
-                                                            <div class="combobox__item" value="1">Xóa</div>
-                                                            <div class="combobox__item"  value="2">Ngưng sử dụng</div>
+                                                    <div class="group__title-combobox">
+                                                        <div class="title">Sửa</div>
+                                                        <div class="combobox">
+                                                            <button class="m-icon"><div class="m-arrow-dropdown-blue"></div></button>
+                                                            <div class="combobox__data-under" hidden>
+                                                                <div class="combobox__item" value="0">Nhân bản</div>
+                                                                <div class="combobox__item" value="1">Xóa</div>
+                                                                <div class="combobox__item"  value="2">Ngưng sử dụng</div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -356,6 +357,19 @@
             </div>
             <div class="dialog__footer">
                 <button id="btnOk" class="button1">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+    <!-- pop-up delete emp -->
+    <div id="dlgDialog2" class="dialog" hidden>
+        <div class="dialog__msg-box">
+            <div class="msg-content">
+                <div class="m__icon-warning"></div>
+                <div class="msg__content" style="margin-right: 20px;">Bạn có thực sự muốn xóa Nhân viên không?</div>
+            </div>
+            <div class="footer">
+                <button class="button2" style="width: 75px">Không</button>
+                <button class="button1"style="min-width: 50px !important">Có</button>
             </div>
         </div>
     </div>

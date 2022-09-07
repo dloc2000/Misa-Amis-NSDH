@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/layout/formEmployee.css">
 </head>
 <body>
-    <div class="container__form">
+    <div class="container__form" hidden>
         <div class="container__form-header">
             <div class="form__popup-title">
                 <div class="title-popup">Thông tin nhân viên</div>
@@ -156,11 +156,34 @@
         </div>
     </div>
     <!-- <div class="dialog dialog__content"></div> -->
-    <div class="group__input--title">
-        <div class="input__title">Mã
-            <b style="color: red">*</b>
+     <!-- form-dialog -->
+    <div id="dlgDialog1" class="dialog" hidden>
+        <div class="dialog__msg-box">
+            <div class="msg-content">
+                <div class="m__icon-warning"></div>
+                <div class="msg__content" style="margin-right: 20px;">Bạn có thực sự muốn xóa Nhân viên không?</div>
+            </div>
+            <div class="footer">
+                <button class="button2" style="width: 75px">Không</button>
+                <button class="button1"style="min-width: 50px !important">Có</button>
+            </div>
         </div>
-        <input type="text" class="input">
+    </div>
+    <!-- combobox not input -->
+    <div class="dialog">
+        <div class="dialog__msg-box">
+            <div class="group__title-combobox">
+                <div class="title">Sửa</div>
+                <div class="combobox">
+                    <button class="m-icon"><div class="m-arrow-dropdown-blue"></div></button>
+                    <div class="combobox__data-under" hidden>
+                        <div class="combobox__item" value="0">Nhân bản</div>
+                        <div class="combobox__item" value="1">Xóa</div>
+                        <div class="combobox__item"  value="2">Ngưng sử dụng</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="lib/combobox/js/combobox.js"></script>

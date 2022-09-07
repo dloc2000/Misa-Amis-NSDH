@@ -27,14 +27,16 @@ function loadData() {
                             trHTML.append(`<td><input type="checkbox"></td>`);
                         } else if(propName === "fix") {
                             trHTML.append(`<td>
-                              <div class="title">Sửa</div>
-                              <div class="combobox">
+                              <div class="group__title-combobox">
+                                <div class="title">Sửa</div>
+                                <div class="combobox">
                                   <button class="m-icon"><div class="m-arrow-dropdown-blue"></div></button>
                                   <div class="combobox__data-under" hidden>
                                       <div class="combobox__item" value="0">Nhân bản</div>
                                       <div class="combobox__item" value="1">Xóa</div>
                                       <div class="combobox__item"  value="2">Ngưng sử dụng</div>
                                   </div>
+                                </div>
                               </div>
                             </td>`);
                         } else {
@@ -56,7 +58,7 @@ function loadData() {
                 // Lấy thông tin các cột dữ liệu của bảng
 
 
-
+                console.log("load data");
 
 
             })
@@ -101,6 +103,7 @@ function saveData() {
         if(msgErrors.length > 0 ) {
           common.showErrorDialog(msgErrors);
         }
+        
       // Call API thực hiện cất dữ liệu
       //  1. Build Object Employee
         let inputs = $('#formBody input');
@@ -124,7 +127,7 @@ function saveData() {
               $("#formEmployee").hide();
           },
           error: function() {
-            alert("loi roi")
+            console.log("loi roi")
           }
         });
   } catch (error) {
@@ -178,8 +181,16 @@ function initEvent() {
   });
   // 4. Cất dữ liệu khi nhán button Cất và thêm :
    $("html").on("click","#btnSaveAdd", saveData);
-  //
-//   $("body").bind("keydown", "l", function () {
-//         $("#formEmployee").show();
-//   });
+
+  // Reload dữ liệu page
+   $("#btnReload").click(function () { 
+          loadData();
+});
+// 5.
+// ẩn dialog validate khi ấn btn đồng ý
+  $('html').on("click","#btnOk", function () {
+    $(this).parents(".dialog").hide();
+  });
+
+
 }

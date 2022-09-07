@@ -55,16 +55,26 @@ table tr.row--selected {
 
 table tr td:first-child,
 table tr td:last-child {
-    position: sticky;
+    /* position: sticky; */
 }
 
-table tr td:last-child {
+/* table tr td:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
+    z-index: 9;
+} */
 
+/* combox btn-icon not input */
+table tbody tr td .combobox {
+    width: 30px;
+
+}
+table tbody tr td .combobox .combobox__data-under{
+    width: 170px;
+    right: -50%
+}
 .page__table tr th input {
     width: 18px;
     height: 16px;

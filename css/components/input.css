@@ -52,8 +52,8 @@ select:focus {
 	width: 16px;
 	height: 16px;
     position: absolute;
-    right: 9% ;
-    top:12% ;
+    right: 80px ;
+    bottom:24px ;
     cursor: pointer;
 }
 

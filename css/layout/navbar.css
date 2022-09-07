@@ -31,6 +31,12 @@
 .item-active {
     background-color: #58595d;
 }
+
+.item-selected {
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -78px -1588px;
+	width: 14px;
+	height: 18px;
+}
 .item-pesudo:before {
     content: "";
     position: absolute;

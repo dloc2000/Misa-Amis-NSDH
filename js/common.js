@@ -8,7 +8,7 @@ var common = {
      showErrorDialog(msgErrors) {
         try {
             // Khai báo html của dialog:
-            let dlgHTML = $(`<div id="dlgDialog1" class="dialog dialog--warning" hidden>
+            let dlgHTML = $(`<div id="dlgDialog1" class="dialog">
                                 <div class="dialog__content">
                                     <div id="btnClose1" class="dialog__button--close"></div>
                                     <div class="dialog__header title">Thông báo</div>
@@ -22,18 +22,19 @@ var common = {
                             </div>
                             `);
             // Đẩy nội dung từ mảng vào trong dlgHTML
-            var dlgBody = dlgHTML.find("dialog__body");
+            var dlgBody = dlgHTML.find(".dialog__body");
             // debugger
             // console.log(dlgBody);
             // console.log(dlgHTML);
             if(msgErrors) {
                 for (const msgError of msgErrors) {
-                    let textHTML = `<div>${msgError}</div>`
+                    let textHTML = `<div>-${msgError}</div>`
                     dlgBody.append(textHTML);
                 }
             }
             // Hiển thị dialog
             $('body').append(dlgHTML);
+            
         } catch (error) {
             console.log(error);
         }
