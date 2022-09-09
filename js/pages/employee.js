@@ -103,7 +103,7 @@ function initEvent() {
  * Load dữ liệu từ API
  * Author: Locdx 06/09/2022
  */
-function loadData() {
+function loadData(callback) {
   try {
     // Call API thực hiện lấy data cho table:
     fetch(url, { method: "GET" })
@@ -196,6 +196,7 @@ function saveData() {
 
     // Call API thực hiện cất dữ liệu
     //  1. Build Object Employee
+    debugger
     let inputs = $("#formBody input");
     const employee = {};
     for (const input of inputs) {
@@ -205,22 +206,37 @@ function saveData() {
         employee[propName] = value;
       }
     }
+    console.log("alo")
     // POST Data
+    // $.ajax({
+    //   type: "POST",
+    //   url: url,
+    //   data: JSON.stringify(employee),
+    //   dataType: "json",
+    //   contentType: "application/json",
+    //   // async: false,
+    //   success: function (response) {
+    //       $("#formEmployee").hide();
+    //       loadData(toastFunc("Thêm mới"))
+    //   },
+    //   error: function () {
+    //     console.log("loi roi");
+    //   },
+    // });
     $.ajax({
       type: "POST",
       url: url,
       data: JSON.stringify(employee),
       dataType: "json",
       contentType: "application/json",
-      async: false,
-      success: function (response) {
+      // async: false,
+      success: function() {
         $("#formEmployee").hide();
-        console.log("thanh cong");
       },
       error: function () {
-        console.log("loi roi");
-      },
-    });
+          console.log("Lỗi rồi");
+        }
+    })
     loadData();
   } catch (error) {
     console.log(error);
@@ -254,7 +270,6 @@ function updateData(idEmployee) {
       contentType: "application/json",
       async: false,
       success: function (response) {
-        console.log("thanh cong update");
         $("#formEmployee").hide();
       },
       error: function () {
@@ -263,7 +278,7 @@ function updateData(idEmployee) {
       timeout: 3000
     });
     // load lại dữ liệu mới
-    loadData();
+    loadData(toastFunc("Sửa"));
   } catch (error) {
     console.log(error);
   }
@@ -287,11 +302,8 @@ function deleteData(id) {
               contentType: "application/json",
               async: false,
               success: function (response) {
-                   loadData(
-                     () => {
-                        common.showToastMessage.success();
-                     }
-                   );
+                   loadData(toastFunc("Xóa"));
+                     
               },
               error: function () {
                 console.log("loi xoa roi");
@@ -302,4 +314,8 @@ function deleteData(id) {
   } catch (error) {
     console.log(error);
   }
+}
+
+function toastFunc(text) {
+    common.showToastMessage.success(text);
 }

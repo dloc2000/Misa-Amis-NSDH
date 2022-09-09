@@ -97,14 +97,14 @@ var common = {
    * Author: Locdx 07/09/2022
    */
   showToastMessage: {
-    success: function (){
+    success: function (text){
       try {
         let toastHTML = `
         <div class="toast active">
                 <div class="toast__message-dialog">
                     <div class="toast__message-left">
                         <div class="toast__icon m__icon-success"></div>
-                        <div class="toast__title">Xóa nhân viên thành công</div>
+                        <div class="toast__title">${text} nhân viên thành công</div>
                     </div>
                     <div class="toast__message-right">
                         <div class="toast__close toast__success m__icon-close"></div>

@@ -84,7 +84,7 @@
 .page__footer {
     position: sticky;
     bottom: 10px;
-    width: 100% - 30px;
+    width: calc(100% - 16px);
     height: 56px;
     /* background-color: #eceef1; */
     display: flex;
