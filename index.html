@@ -170,7 +170,7 @@
         </div>
     </div>
     <!-- combobox not input -->
-    <div class="dialog">
+    <div class="dialog" hidden>
         <div class="dialog__msg-box">
             <div class="group__title-combobox">
                 <div class="title">Sửa</div>
@@ -185,7 +185,42 @@
             </div>
         </div>
     </div>
+
+    <!-- toast message -->
+    
+        <div class="toast">
+            <div class="toast__message-dialog">
+                <div class="toast__message-left">
+                    <div class="toast__icon m__icon-success"></div>
+                    <div class="toast__title">Xóa nhân viên thành công</div>
+                </div>
+                <div class="toast__message-right">
+                    <div class="toast__close toast__success m__icon-close"></div>
+                </div>
+                <div class="progress"></div>
+            </div>
+            
+        </div>
+        <button id="btnToast" class="button1">Toast</button>
+    
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="lib/combobox/js/combobox.js"></script>
+
+    <script>
+        $("#btnToast").click(function () { 
+            $(".toast").addClass("active");
+            $(".progress").addClass("active");
+
+            setTimeout(() => {
+                   $(".toast").removeClass("active"); 
+                   $(".progress").removeClass("active");
+            },3000)
+        });
+
+        $(".toast__close").click(function (e) { 
+            
+            $(".progress").removeClass("active");    
+        });
+    </script>
 </body>
 </html>

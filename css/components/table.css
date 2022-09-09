@@ -15,42 +15,24 @@ th {
     text-transform: uppercase;
     border-bottom: 1px solid #c7c7c7;
     border-right: 1px solid #c7c7c7;
-    position: sticky;
-    z-index: 2;
+    /* position: sticky; */
+    /* z-index: 2; */
 }
 
 table tbody tr:last-child {
     border-bottom: unset;
 }
-table tbody .title {
-    color: #0075c0;
-    font-weight: 600;
-    padding-right: 16px;
-}
 
-table tbody button {
-    background-color: unset;
-    height: 26px 16px;
-    border: none;
-    cursor: pointer;
-}
 
-table tbody button:focus {
-    width: 26px;
-    height: 16px;
-    line-height: 13px;
-    border-radius: 2px;
-    border: 1px solid #0075c0;
 
-}
 table thead {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     background-color: #fff;
 }
 
-table tr.row--selected {
-    background-color: #dedede;
+.row--selected {
+    background-color: #e5f3ff;
 }
 
 table tr td:first-child,
@@ -66,40 +48,9 @@ table tr td:last-child {
     z-index: 9;
 } */
 
-/* combox btn-icon not input */
-table tbody tr td .combobox {
-    width: 30px;
-
-}
-table tbody tr td .combobox .combobox__data-under{
-    width: 170px;
-    right: -50%
-}
-.page__table tr th input {
-    width: 18px;
-    height: 16px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    border-radius: 2px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.page__table tr td input {
-    width: 18px;
-    height: 16px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    border-radius: 2px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 table tbody tr:hover {
-    background-color: #E5F3FF;
+    background-color: #e5f3ffb2;
 }
 table tbody tr td {
     height: 44px;
@@ -117,52 +68,3 @@ table tbody tr td {
     height: calc(100%-56px);
 }
 
-/* .table__paging {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 56px;
-    border-top: 1px solid #ccc
-}
-
-.table__paging--center {
-    display: flex;
-    align-items: center;
-}
-
-.paging__button {
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    cursor: pointer;
-    opacity: .7;
-    background-color: #fff;
-    margin: 0 4px;
-}
-
-.paging__button:hover {
-    border: 1px solid #dedede;
-    opacity: 1;
-}
-
-.paging__number {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 40px;
-    margin: 0 4px;
-    cursor: pointer;
-    border: 1px solid #dedede;
-    background-color: #fff;
-}
-
-.paging__number:hover {
-    background-color: #dedede;
-} */

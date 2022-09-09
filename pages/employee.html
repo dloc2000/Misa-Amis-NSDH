@@ -111,12 +111,12 @@
                                                 <th class="text__align--left" prop-name="GenderName" style="min-width: 150px;">Số tài khoản</th>
                                                 <th class="text__align--left" prop-name="GenderName" style="min-width: 250px;">Tên ngân hàng</th>
                                                 <th class="text__align--left" prop-name="GenderName" style="min-width: 250px;">Chi nhánh TK ngân hàng</th>
-                                                <th class="text__align--center" prop-name="fix" style="min-width: 120px;">Chức năng</th>
+                                                <th class="text__align--center" prop-name="options" style="min-width: 120px;">Chức năng</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td class="text__align--center no_padding" style="min-width: 40px;">
+                                            <!-- <tr class="row--selected">
+                                                <td id="EmployeeCode"class="text__align--center no_padding" style="min-width: 40px;">
                                                     <input type="checkbox">
                                                 </td>
                                                 <td class="text__align--left" style="min-width: 150px;">001200</td>
@@ -130,19 +130,19 @@
                                                 <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
                                                 <td class="text__align--left" style="min-width: 250px;">Chi nhánh TK ngân hàng</td>
                                                 <td class="text__align--center" style="min-width: 120px;">
-                                                    <div class="group__title-combobox">
-                                                        <div class="title">Sửa</div>
-                                                        <div class="combobox">
-                                                            <button class="m-icon"><div class="m-arrow-dropdown-blue"></div></button>
-                                                            <div class="combobox__data-under" hidden>
-                                                                <div class="combobox__item" value="0">Nhân bản</div>
-                                                                <div class="combobox__item" value="1">Xóa</div>
-                                                                <div class="combobox__item"  value="2">Ngưng sử dụng</div>
+                                                        <div class="group__title-combobox">
+                                                            <div class="title">Sửa</div>
+                                                            <div class="combobox">
+                                                                <button class="m-icon"><div class="m-arrow-dropdown-blue"></div></button>
+                                                                <div class="combobox__data-under" hidden>
+                                                                    <div class="combobox__item" value="0">Nhân bản</div>
+                                                                    <div class="combobox__item" value="1" id="btnDelEmp">Xóa</div>
+                                                                    <div class="combobox__item"  value="2">Ngưng sử dụng</div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -324,7 +324,7 @@
                         <button class="button2 button__cancel">Hủy</button>
                     </div>
                     <div class="group__button-right">
-                        <button class="button2 button__save">Cất</button>
+                        <button id="btnSave" class="button2 button__save">Cất</button>
                         <button id="btnSaveAdd" class="button1 button__save-add">Cất và thêm</button>
                     </div>
                 </div>
@@ -361,7 +361,7 @@
         </div>
     </div>
     <!-- pop-up delete emp -->
-    <div id="dlgDialog2" class="dialog" hidden>
+    <div id="dialogDel" class="dialog" hidden>
         <div class="dialog__msg-box">
             <div class="msg-content">
                 <div class="m__icon-warning"></div>
