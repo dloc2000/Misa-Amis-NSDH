@@ -1,0 +1,46 @@
+.button1 {
+    background-color: #019160;
+    border-radius: 3px;
+    height: 34px;
+    color: #fff;
+    padding: 6px 16px;
+    text-align: center;
+    border: none;
+    min-width: 100px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button2 {
+    background-color: transparent;
+    height: 34px;
+    color: #111111;
+    /* font-weight: 600; */
+    padding: 6px 16px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #8d9096;
+    min-width: 55px;
+    cursor: pointer;
+    outline: none;
+}
+.button1:hover,
+.button1:focus {
+    background-color: #2fbe8e;
+}
+
+.button:active {
+    background-color: #01b175;
+}
+
+.button2:hover {
+    background-color: #c0c1c2;
+}
+.button__icon {
+    padding: 0 16px;
+    background-repeat: no-repeat;
+    background-position-x: 16px;
+    background-position-y: center;
+    background-size: 16px 16px;
+    padding-left: 40px;
+}

@@ -1,0 +1,111 @@
+.header {
+    height: 48px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+ /* header right */
+
+.header__right {
+    height: 100%;
+    width: calc(100% - 173px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__right-select {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header__right-icon {
+    background-image: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -840px -30px;
+    cursor: pointer;
+    margin: 0 10px;
+}   
+
+.header__branch-name {
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header__right-select .link-branch {
+    background-image: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -1129px -358px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.header__right-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user__bell-icon {
+    background-image: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -788px -30px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.user__dropdown {
+    padding-right: 20px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    line-height: 13px;
+    text-align: center;
+}
+.user__avatar {
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.user__name {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+.user__dropdown .link-branch {
+    background-image: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -1800px -472px;
+    margin-left: 6px;
+    cursor: pointer;
+
+}
+
+ /* header left */
+.header__left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 173px;
+    background-color: #38393d;
+    color: #111111;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+
+.header__sidebar {
+    background-image: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -1157px -27px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header__logo {
+    height: 32px;
+    width: 90px;
+    background-image: url("../../assets/img/logo_event_trungthu.090d014b.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}

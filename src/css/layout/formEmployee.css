@@ -1,0 +1,142 @@
+.container__form {
+    /* width: 900px; */
+    height: 610px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+/* form-header left */ 
+.container__form-header{
+    display: flex;
+    height: 73px;
+    justify-content:space-between ;
+    align-items: center;
+    position: relative;
+}
+.form__popup-title {
+    display: flex;
+    padding: 20px 12px 20px 32px;
+}
+.form__popup-title .checkbox__component {
+    padding: 0px 19.5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.form__popup-title .checkbox__component label {
+    margin-left: 10px;
+}
+.form__popup-title .checkbox__component .input-checkbox:checked {
+    background-color: #019160;
+}
+.title-popup {
+    font-weight: 700;
+    font-size: 24px;
+}
+/* form-header right */ 
+
+.form__popup-close {
+    display: flex;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    align-items: center;
+    padding: 6px;
+}
+.form__popup-close .btn-help {
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.form__popup-close .btn-close {
+    cursor: pointer;
+}
+
+
+
+/* form-body */
+
+.container__form-body {
+    display: grid;
+    grid-row-gap: 16px;
+    height: 390px;
+    width: 100%;
+    padding : 0 32px;
+    box-sizing: border-box;
+}
+    /* grid-up left*/
+.form__grid-up {
+    margin-bottom: 12px;
+}
+.grid__up-left{
+    padding-right: 26px;
+}
+.grid__up-left .left-1{
+    display: flex;
+    
+}
+
+.grid__up-left .left-1 .group__input--title:nth-child(1) {
+    padding-right: 6px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid__up-left .left-1 .group__input--title:nth-child(2) {
+    width: 235px;
+    display: flex;
+    flex-direction: column;
+}
+    /* grid-up right*/
+
+.grid__up-right .right-1 {
+     display: flex;
+}
+.grid__up-right .right-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+    /* grid-down */
+.grid__down-2 {
+    display: flex;
+}
+
+.container__form-body .group__input--title {
+    padding-right: 6px;
+}
+
+
+
+
+
+/*form - footer */
+.container__form-footer {
+    position: absolute;
+    width: 100%;
+    height: 34px;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0 32px;
+    box-sizing: border-box;
+}
+
+.button__save{
+    margin-right: 10px;
+}
+
+.divide {
+    background-color: #E0E0E0;
+    position: absolute;
+    height: 1px;
+    bottom: 74px;
+    right: 32px;
+    left: 32px;
+}

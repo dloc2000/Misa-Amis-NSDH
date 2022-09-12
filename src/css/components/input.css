@@ -1,0 +1,75 @@
+.input {
+    height: 32px;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #bbbbbb;
+    padding-left: 12px;
+    padding-right: 40px;
+    min-width: 100px;
+    font-family: MISA Fonts;
+}
+
+.input-full-width {
+    width: 100%;
+}
+
+.input-placehoder__italic::placeholder {
+    font-style: italic;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.input__title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #111111;
+    padding: 0 0 4px;
+}
+
+textarea {
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #bbbbbb;
+    padding: 16px;
+    width: 100%;
+}
+
+.input:focus,
+textarea:focus,
+select:focus {
+    border-color: #019160;
+}
+
+.input__icon {
+    background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat -956px -31px;
+	width: 22px;
+	height: 22px;
+}
+
+.input__icon-right {
+    background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat -33px -1664px;
+	width: 16px;
+	height: 16px;
+    position: absolute;
+    right: 80px ;
+    bottom:24px ;
+    cursor: pointer;
+}
+
+.input--required {
+    color: red;
+}
+
+.input__error--required {
+    border: 1px solid red;
+}
+
+.input--error {
+    border: 1px solid red !important;
+}
+
+.input-checkbox {
+    width: 16px;
+    height: 18px;
+}
